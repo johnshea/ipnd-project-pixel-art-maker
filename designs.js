@@ -1,9 +1,9 @@
 // Select color input
-var boxColor = '#000000';
+let boxColor = '#000000';
 
 // Select size input
-var gridWidth = 1;
-var gridHeight = 1;
+let gridWidth = 1;
+let gridHeight = 1;
 
 document.querySelector('#sizePicker').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -25,7 +25,7 @@ function colorBox() {
 function makeGrid(width, height) {
 
   // Find table element
-  var t = document.querySelector('#pixelCanvas');
+  let t = document.querySelector('#pixelCanvas');
 
   // Remove existing table rows and cells
   while (t.hasChildNodes()) {
